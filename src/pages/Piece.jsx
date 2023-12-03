@@ -13,7 +13,7 @@ function Piece(){
     const [fileObject, setFileObject] = useState(findFileName);
 
     function findFileName(){
-        let url = window.location.href.split("/")[3];
+        let url = window.location.href.split("/")[5];
         const index = pieceValues.indexOf("./" + url);
         console.log(pieceList[index].default.content.split("\n"));
         setContent(pieceList[index].default.content.split("\n"))

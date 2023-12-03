@@ -1,16 +1,16 @@
 import './App.css';
 import Home from './pages/Home';
 import Piece from './pages/Piece';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
-      <Route path = "/" element = {<Home/>}/>
+      <Route exact path = "/" element = {<Home/>}/>
       <Route path = "/*" element = {<Piece/>}/>
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
