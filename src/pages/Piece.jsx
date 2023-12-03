@@ -7,9 +7,12 @@ function Piece(){
     return (
         <div className="main-page">
             <Navbar/>
-            <h3>A piece</h3>
-            <p className="author">autho</p>
-            <p className="short">asdfsadfsadf</p>
+            <main>
+                <h3 className="title">A piece</h3>
+                <p className="author">autho</p>
+                <p className="published">Published 1/12/24</p>
+                <p className="content">asdfsadfsadf</p>
+            </main>
             <Footer/>
         </div>
     )

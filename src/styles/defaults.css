@@ -76,3 +76,24 @@ footer{
     bottom: 0;
     font-size: 12px;
 }
+
+/* Piece */
+
+main > .title{
+    font-family: 'Princess Sofia', cursive;
+    font-size: 30px;
+    margin: 0;
+}
+main > .author{
+    margin: 10px 0px;
+    font-weight: 600;
+}
+main > .published{
+    margin-top: 0;
+    font-weight: 300;
+}
+
+main > .content{
+    padding-top: 15px;
+    line-height: 150%;
+}
