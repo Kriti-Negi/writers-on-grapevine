@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/writers-on-grapevine/static/css/main.580033ca.css",
-    "main.js": "/writers-on-grapevine/static/js/main.de29ff78.js",
+    "main.js": "/writers-on-grapevine/static/js/main.3eec7889.js",
     "static/js/787.635c6704.chunk.js": "/writers-on-grapevine/static/js/787.635c6704.chunk.js",
     "index.html": "/writers-on-grapevine/index.html",
     "main.580033ca.css.map": "/writers-on-grapevine/static/css/main.580033ca.css.map",
-    "main.de29ff78.js.map": "/writers-on-grapevine/static/js/main.de29ff78.js.map",
+    "main.3eec7889.js.map": "/writers-on-grapevine/static/js/main.3eec7889.js.map",
     "787.635c6704.chunk.js.map": "/writers-on-grapevine/static/js/787.635c6704.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.580033ca.css",
-    "static/js/main.de29ff78.js"
+    "static/js/main.3eec7889.js"
   ]
 }
