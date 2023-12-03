@@ -1,0 +1,78 @@
+body {
+    width: 80%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar > img{
+    width: 70px;
+    padding-right: 20px;
+}
+
+.navbar > h1{
+    font-family: 'Princess Sofia', cursive;
+    font-size: 48px;
+}
+
+.cards {
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 30px 30px;
+    margin: 0px 30px;
+}
+
+.card > h3{
+    font-family: 'Princess Sofia', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+.card > .author{
+    font-weight: 700;
+    margin-top:5px;
+    color: 414141;
+}
+
+.card > .short{
+    margin: 10px 0;
+}
+
+.label-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.label{
+    width: 100px;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.label > p{
+    margin: 0;
+    font-family: 'Princess Sofia', cursive;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    color: #414141;
+    width: 80%;
+    padding: 0px 0px 30px;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
