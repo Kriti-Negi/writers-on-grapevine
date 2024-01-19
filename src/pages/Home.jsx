@@ -16,7 +16,7 @@ function Home(){
                     index = {index}
                     cardTitle = {piece.title}
                     author = {piece.author}
-                    piece = {piece.content.substring(0, 300)}
+                    piece = {piece.content.substring(0, 50) + "..."}
                     type = {piece.type.toUpperCase()}
                 />
             })}

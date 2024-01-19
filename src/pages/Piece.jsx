@@ -14,17 +14,16 @@ function Piece(){
         let fileIndex = url[url.length - 1];
 
         setContent(files[fileIndex].content.split("\n"))
-        console.log(files[fileIndex]);
         return (files[fileIndex]);
     }
 
     function createContent(){
         if(content.length > 0){
             return (
-                <div>{content.map((elem, index) => <p key = {index}>{elem}</p>)}</div>
+                <div>{content.map((elem, index) => <p key = {index}> {elem} &nbsp; </p>)}</div>
             )
         }else{
-            return <p></p>
+            return <p> </p>
         }
     }
 

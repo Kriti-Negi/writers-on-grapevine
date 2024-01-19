@@ -1,17 +1,10 @@
 const files = [
     {
-        title: "Title2",
-        author: "Author",
+        title: "Moonwatching",
+        author: "Lowen Montgomery",
         type: "poem",
         published: "Published",
-        content: "Contents sd;flsdf;lkds flsd;f sl;df sd\nlfk \n sdlf dsf dslkfjsdfkj"
-    },
-    {
-        title: "Title1",
-        author: "Author",
-        type: "poem",
-        published: "Published",
-        content: "Contents sd;ooh;lkds ay;f sl;df sd\nlfk \n sdlf dsf dslkfjsdfkj"
+        content: "Oh, to be young and in love \n with the world again. \n \n To stare in awe at the moon \n with star-speckled eyes \n because every night was special \n before you knew \n every night is the same"
     }
 ];
 export default files;
