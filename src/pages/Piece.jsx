@@ -2,22 +2,20 @@ import { useState } from "react";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import PieceLabel from "../components/PieceLabel";
 
-const pieces = require.context('../JsonFiles', true);
-const pieceList = pieces.keys().map(piece => pieces(piece));
-const pieceValues = pieces.keys();
+import files from "../Pieces";
 
 function Piece(){
     const [content, setContent] = useState([]);
     const [fileObject, setFileObject] = useState(findFileName);
 
     function findFileName(){
-        let url = window.location.href.split("/")[5];
-        const index = pieceValues.indexOf("./" + url);
-        console.log(pieceList[index].default.content.split("\n"));
-        setContent(pieceList[index].default.content.split("\n"))
-        return (pieceList[index]);
+        let url = window.location.href.split("/");
+        let fileIndex = url[url.length - 1];
+
+        setContent(files[fileIndex].content.split("\n"))
+        console.log(files[fileIndex]);
+        return (files[fileIndex]);
     }
 
     function createContent(){
@@ -34,9 +32,9 @@ function Piece(){
         <div className="main-page">
             <Navbar/>
             <main>
-                <h3 className="title">{fileObject.default.title}</h3>
-                <p className="author">{fileObject.default.author}</p>
-                <p className="published">{fileObject.default.published}</p>
+                <h3 className="title">{fileObject.title}</h3>
+                <p className="author">{fileObject.author}</p>
+                <p className="published">{fileObject.published}</p>
                 <div className="content">{createContent()}</div>
             </main>
             <Footer/>
